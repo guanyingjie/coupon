@@ -21,7 +21,11 @@ repositories {
 }
 
 dependencies {
+    implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.78'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.6.1'
+    implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'net.sf.oval:oval:3.2.1'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
