@@ -4,7 +4,10 @@ import com.java.api.beans.TemplateRule;
 import com.java.api.enums.CouponType;
 import com.java.dao.converter.CouponTypeConverter;
 import com.java.dao.converter.RuleConverter;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.annotation.CreatedDate;
 
@@ -15,6 +18,9 @@ import java.util.Date;
 @EntityScan
 @Builder
 @Table(name = "coupon_template")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CouponTemplate implements Serializable {
 
     @Id
