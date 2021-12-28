@@ -10,7 +10,8 @@ import com.java.dao.entity.CouponTemplate;
 
 import java.util.List;
 
-public interface CouponTemplateRepository extends JpaRepository<CouponTemplateRepository,Long> {
+
+public interface CouponTemplateRepository extends JpaRepository<CouponTemplate,Long> {
     List<CouponTemplateRepository> findAllByShopId(Long shopId);
 
     // IN查询 + 分页支持的语法

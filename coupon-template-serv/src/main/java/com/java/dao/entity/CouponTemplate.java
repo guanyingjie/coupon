@@ -15,12 +15,12 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-@EntityScan
 @Builder
 @Table(name = "coupon_template")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class CouponTemplate implements Serializable {
 
     @Id
