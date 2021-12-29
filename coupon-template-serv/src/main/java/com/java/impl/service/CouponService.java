@@ -31,6 +31,12 @@ import java.util.stream.Collectors;
 public class CouponService implements CouponTemplateService{
     CouponTemplateRepository couponTemplateRepository;
     CouponTemplateConverter couponTemplateConverter;
+
+    public CouponService(CouponTemplateRepository couponTemplateRepository, CouponTemplateConverter couponTemplateConverter) {
+        this.couponTemplateRepository = couponTemplateRepository;
+        this.couponTemplateConverter = couponTemplateConverter;
+    }
+
     @Override
     public CouponTemplateInfo createTemplate(CouponTemplateInfo request) {
         //限制只允许100张一下优惠券

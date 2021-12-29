@@ -30,7 +30,7 @@ spring:
     hibernate:
 
       # 在生产环境全部为none，防止ddl结构被自动执行，破坏生产数据
-      ddl-auto: none
+      ddl-auto: update
     # 在日志中打印经过格式化的SQL语句
     properties:
       hibernate.format_sql: true

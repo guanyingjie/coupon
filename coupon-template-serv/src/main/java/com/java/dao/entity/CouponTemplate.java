@@ -8,7 +8,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
@@ -49,7 +48,7 @@ public class CouponTemplate implements Serializable {
 
     // 创建时间，通过@CreateDate注解自动填值（需要配合@JpaAuditing注解在启动类上生效）
     @CreatedDate
-    @Column(name = "created_time", nullable = false)
+    @Column(name = "created_time", nullable = true)
     private Date createdTime;
 
     // 优惠券核算规则，平铺成JSON字段

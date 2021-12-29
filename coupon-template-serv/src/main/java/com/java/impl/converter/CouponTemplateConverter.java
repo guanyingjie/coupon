@@ -2,7 +2,9 @@ package com.java.impl.converter;
 
 import com.java.api.beans.CouponTemplateInfo;
 import com.java.dao.entity.CouponTemplate;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CouponTemplateConverter {
     public static CouponTemplateInfo convertToTemplateInfo(CouponTemplate template){
     return CouponTemplateInfo.builder()
